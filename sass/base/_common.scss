@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}

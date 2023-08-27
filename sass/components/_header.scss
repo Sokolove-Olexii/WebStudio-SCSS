@@ -1,0 +1,114 @@
+.header-main {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+}
+
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: black;
+    text-decoration: none;
+}
+
+.Web {
+    color: #2196F3;
+}
+
+.header-ul1 {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 281px;
+    align-items: center;
+}
+
+.nav-list-link {
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.nav-list-text {
+    position: relative;
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-list-text::after{
+    transition: all 500ms;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+.nav-list-text:hover::after{
+    width: 100%;
+}
+
+
+.nav-list-text:hover {
+    color: #2196F3;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    width: 333px;
+    align-items: center;
+}
+
+.svg-mail {
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.header-right-content:hover .svg-mail {
+    fill: #2196F3;
+    transition: fill 250ms;
+}
+
+.header-right-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.header-right-content:hover {
+    transition: color 250ms;
+    color: #2196F3;
+}
