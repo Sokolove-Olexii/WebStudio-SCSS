@@ -44,7 +44,6 @@
 
 .hidden{
     padding: 63px 0;
-    background-color: rgba(33, 150, 243, 0.90);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -52,6 +51,26 @@
     left: 0;
     transform: translatey(-100%);
     transition: transform 1s ease;
+    transition: transform 1s ease;
+    animation: hidden-list 2s infinite;
+}
+
+@keyframes hidden-list{
+    0%{
+        background-color: black;
+    }
+
+    25%{
+        background-color: #2F303A;
+    }
+
+    50%{
+        background-color: gray;
+    }
+
+    100%{
+        background-color: rgba(33, 150, 243, 0.90);
+    }
 }
 
 .hidden-p{
@@ -85,6 +104,8 @@
 }
 
 .list-p {
+    animation: bounce; 
+    animation-duration: 2s; 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
