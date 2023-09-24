@@ -1,0 +1,23 @@
+$colorHover: #2196F3;
+$colorHeader: #212121;
+$colorHright: #757575;
+$secondColor: #B4AD9E;
+$primaryColor: #03A9F4;
+$colorFooter:#2F303A;
+$colorOurclients:#AFB1B8;
+
+$colors:(
+    'hover': #2196F3,
+    'header':#212121,
+    'Hright':#757575,
+    'second':#B4AD9E,
+    'primary':#03A9F4,
+    'footer':#2F303A,
+    'Ourclients':#AFB1B8,
+);
+
+@function getcolor ($key) {
+    @return map-get($colors, $key),
+};
+
+

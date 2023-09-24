@@ -1,6 +1,118 @@
 .footer {
     background: #2F303A;
     padding: 60px 0 60px;
+
+    &-text {
+        color: #FFFFFF;
+    }
+
+    &-contact {
+        display: flex;
+        margin-bottom: 9px;
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1,71%; /* 171.429% */
+        letter-spacing: 0.42px;
+    }
+
+    &-main {
+        margin: 0 215px 0 215px;
+        width: 1200px;
+        display: flex;
+    }
+    
+    &-left {
+        width: 231px;
+    }
+    
+    &-h2 {
+        color: #FFF;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    
+    &-mail-list {
+        margin-top: 20px;
+    }
+
+    &-right {
+        padding-top: 12px;
+        margin-left: 70px;
+        width: 206px;
+        height: 80px;
+    }
+    
+    &-svg-content {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+    }
+    
+    &-list-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba(205, 214, 219, 0.1);
+        width: 44px;
+        height: 44px;
+    }
+    
+    &-list-a:hover {
+        transition: background-color 250ms;
+        border-radius: 50%;
+        background-color: #2196F3;
+    }
+    
+    &-mail-list {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &-last-h2{
+        margin-bottom: 20px;
+        color: #FFF;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    
+    &-input{
+        display: flex;
+        padding: 15px 0 15px 16px;
+        width: 358px;
+        height: 50px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(33, 150, 243, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    
+    &-last-btn{
+        border: none;
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        height: 50px;
+    }
+
+    &-last-ul{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .studio {
@@ -15,22 +127,6 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-}
-
-.footer-text {
-    color: #FFFFFF;
-}
-
-.footer-contact {
-    display: flex;
-    margin-bottom: 9px;
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1,71%; /* 171.429% */
-    letter-spacing: 0.42px;
 }
 
 .contact-mail {
@@ -50,65 +146,6 @@
     padding-bottom: 9px;
 }
 
-.footer-main {
-    margin: 0 215px 0 215px;
-    width: 1200px;
-    display: flex;
-}
-
-.footer-left {
-    width: 231px;
-}
-
-.footer-h2 {
-    color: #FFF;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-.footer-mail-list {
-    margin-top: 20px;
-}
-
-.footer-right {
-    padding-top: 12px;
-    margin-left: 70px;
-    width: 206px;
-    height: 80px;
-}
-
-.footer-svg-content {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-}
-
-.footer-list-a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: rgba(205, 214, 219, 0.1);
-    width: 44px;
-    height: 44px;
-}
-
-.footer-list-a:hover {
-    transition: background-color 250ms;
-    border-radius: 50%;
-    background-color: #2196F3;
-}
-
-.footer-mail-list {
-    justify-content: space-between;
-    display: flex;
-}
-
 .clients-list-cards:hover .svg {
     transition: fill 250ms;
     fill: #2196F3;
@@ -122,11 +159,6 @@
     color: #2196F3;
 }
 
-.clients-list-cards:hover {
-    transition: border 250ms;
-    border: 1px solid #2196F3;
-}
-
 .clients-list-cards {
     width: 170px;
     height: 92px;
@@ -135,38 +167,10 @@
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-.footer-last-h2{
-    margin-bottom: 20px;
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-.footer-input{
-    display: flex;
-    padding: 15px 0 15px 16px;
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.footer-last-btn{
-    border: none;
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 200px;
-    height: 50px;
+    &:hover {
+        transition: border 250ms;
+        border: 1px solid #2196F3;
+    }
 }
 
 .button-footer-container{
@@ -182,10 +186,7 @@
     width: 570px;
 }
 
-.footer-last-ul{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .button-p-footer{
     display: flex;

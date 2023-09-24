@@ -74,9 +74,9 @@
 
        
           <section class="features">
-            <ul class="ul-list">
+            <ul class="features-list">
               <!-- Увага до деталей -->
-              <li class="sub-feat">
+              <li class="features-sub">
                 <div class="bg-color-img"><div class="bg-img"></div></div>
                 <h3 class="features-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="feature-p">
@@ -85,7 +85,7 @@
                 </p>
               </li>
               <!-- Пунктуальність -->
-              <li class="sub-feat">
+              <li class="features-sub">
                 <div class="bg-color-img"><div class="bg-img-2"></div></div>
                 
                 <h3 class="features-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
@@ -95,7 +95,7 @@
                 </p>
               </li>
               <!-- Планування  -->
-              <li class="sub-feat">
+              <li class="features-sub">
                 <div class="bg-color-img"><div class="bg-img-3"></div></div>
                 
                 <h3 class="features-subtitle">ПЛАНУВАННЯ</h3>
@@ -104,7 +104,7 @@
                 </p>
               </li>
               <!-- Сучасні технології -->
-              <li class="sub-feat">
+              <li class="features-sub">
                 <div class="bg-color-img"><div class="bg-img-4"></div></div>
                 
                 <h3 class="features-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
@@ -117,7 +117,7 @@
           </section>
        
 
-        <section class="work-photo">
+        <section class="work">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-photo-img">
             <li class="li-img">
@@ -147,15 +147,14 @@
           </ul>
         </section>
         
-        <section class="section-team">
-          <h2 class="our-team">Наша команда</h2>
+        <section class="team">
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team-ul">
-            
-          <li class="team-li">
+          <li class="team__li">
             <div class="team-div">
               <!-- Ігор -->
-              <section class="work-list">
-                <div class="thumb"><img src="./images/ihor.jpg" alt="Ігор" class="team" /></div>
+              <section class="team-work-list">
+                <div class="thumb"><img src="./images/ihor.jpg" alt="Ігор" class="team__photo" /></div>
                 <h4 class="team-list-title">Ігор Дем'яненко</h4>
                 <p class="team-list-paragraph">Product Designer</p>
                 <ul class="team-social-media">
@@ -190,9 +189,9 @@
                 </ul>
             </div>
           </li>
-          <li class="team-li">
+          <li class="team__li">
             <div class="team-div">
-              <div class="thumb"><img src="./images/olga.jpg" alt="Ольга" class="team" /></div>
+              <div class="thumb"><img src="./images/olga.jpg" alt="Ольга" class="team__photo" /></div>
               <h4 class="team-list-title">Ольга Рєпіна</h4>
               <p class="team-list-paragraph">Frontend Developer</p>
               <ul class="team-social-media">
@@ -228,9 +227,9 @@
             </div>
           </li>
           <!-- Микола -->
-            <li class="team-li">
+            <li class="team__li">
               <div class="team-div">
-                <div class="thumb"><img src="./images/mikola.jpg" alt="Микола" class="team" /></div>
+                <div class="thumb"><img src="./images/mikola.jpg" alt="Микола" class="team__photo" /></div>
                 <h4 class="team-list-title">Микола Тарасов</h4>
                 <p class="team-list-paragraph">Marketing</p>
                 <ul class="team-social-media">
@@ -264,11 +263,11 @@
                   </li>
                 </ul>
               </div>
-            </li class="team-li">
+            </li class="team__li">
             <!-- Михайло -->
-            <li class="team-li">
+            <li class="team__li">
               <div class="team-div">
-                <div class="thumb"><img src="./images/mykhail.jpg" alt="Михайло" class="team" /></div>
+                <div class="thumb"><img src="./images/mykhail.jpg" alt="Михайло" class="team__photo" /></div>
                 <h4 class="team-list-title">Михайло Єрмаков</h4>
                 <p class="team-list-paragraph">UI Designer</p>
                 <ul class="team-social-media">
@@ -436,46 +435,46 @@
     <div class="backdrop is-hidden">
       <form class="modal is-hidden">
         <button class="button-close" type="button" data-modal-close>
-          <svg class="svg-close-btn">
+          <svg class="btn-close__svg">
             <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-        <ul>
-          <li class="modal-li">
-            <label for="" class="modal-label"><p class="modal-p">Ім'я</p>
-              <input type="text" class="modal-input" required/>
-              <svg class="svg-label">
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <ul class="modal-list">
+          <li class="modal__li">
+            <label for="" class="modal__label">Ім'я
+              <input type="text" class="modal__input" required/>
+              <svg class="modal__svg">
                 <use href="./images/Icons/symbol-defs.svg#icon-man"></use>
               </svg>
             </label>
           </li>
-          <li class="modal-li">
-            <label for="" class="modal-label"><p class="modal-p">Телефон</p>
-              <input type="tel" class="modal-input" required/>
-              <svg class="svg-label">
+          <li class="modal__li">
+            <label for="" class="modal__label">Телефон
+              <input type="tel" class="modal__input" required/>
+              <svg class="modal__svg">
                 <use href="./images/Icons/symbol-defs.svg#icon-phone1"></use>
               </svg>
             </label>
           </li>
-          <li class="modal-li">
-            <label for="" class="modal-label"><p class="modal-p">Пошта</p>
-              <input type="email" class="modal-input" />
-              <svg class="svg-label">
+          <li class="modal__li">
+            <label for="" class="modal__label">Пошта
+              <input type="email" class="modal__input" />
+              <svg class="modal__svg">
                 <use href="./images/Icons/symbol-defs.svg#icon-email1"></use>
               </svg>
             </label>
           </li>
-          <li class="modal-li">
-            <label for="modal-label"> <p class="modal-p">Коментар</p>
-              <textarea cols="30" rows="10" class="modal-textarea" placeholder="Введіть текст"></textarea>
+          <li class="modal__li">
+            <label for="modal__label" class="modal__label">Коментар
+              <textarea cols="30" rows="10" class="modal__textarea" placeholder="Введіть текст"></textarea>
             </label>
           </li>
         </ul>
-        <p class="modal-accept">
-          <input type="checkbox" class="checkbox-modal">Погоджуюся з розсилкою та приймаю <a href="#" class="modal-link">Умови договору</a>
+        <p class="modal__accept">
+          <input type="checkbox" class="modal__checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="modal__link">Умови договору</a>
         </p>
-        <button class="modal-btn">Відправити</button>
+        <button class="modal__btn">Відправити</button>
       </form>
     </div>
     <!-- /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/

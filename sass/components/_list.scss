@@ -12,12 +12,13 @@
     border: 1px solid #EEEEEE;
     width: 370px;
     height: 404px;
+
+    &:hover{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
 }
 
-.list-li:hover{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
-}
 
 /* -----------------OVERLAY--------------------- */
 /* -----------------OVERLAY--------------------- */
@@ -36,11 +37,11 @@
     position: relative;
     overflow: hidden;
 
+    &:hover .hidden{
+        transform: translateY(0);
+    }
 }
 
-.overlay:hover .hidden{
-    transform: translateY(0);
-}
 
 .hidden{
     padding: 63px 0;
