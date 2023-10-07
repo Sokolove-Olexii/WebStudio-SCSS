@@ -3,7 +3,7 @@
     background-image: url('../images/bg-hero.jpg');
     background-color: rgba(47, 48, 58, 0.4);
 
-    &-little {
+    &__little {
         font-family: 'Roboto' sans-serif;
         font-style: normal;
         font-weight: 900;
@@ -16,7 +16,7 @@
         margin-bottom: 30px;
     }
     
-    &-btn {
+    &__btn {
         border: none;
         display: block;
         background-color: getcolor("hover");
@@ -38,7 +38,7 @@
 
 
 
-
+// -------------------- FEATURES --------------------
 .features {
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@
         height: 248px;
     }
 
-    &-subtitle {
+    &__subtitle {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -69,7 +69,7 @@
         margin-bottom: 10px;
     }
     
-    &-p {
+    &__p {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -81,12 +81,14 @@
     
 
 }
+// -------------------- FEATURES --------------------
 
 
+// -------------------- WORK --------------------
 .work {
     margin-bottom: 94px;
 
-    &-title {
+    &__title {
         font-weight: 700;
         font-size: 36px;
         /* 42:36 */
@@ -104,8 +106,10 @@
         width: 1200px;
     }
 }
+// -------------------- WORK --------------------
 
 
+// -------------------- TEAM --------------------
 .team {
     background: #F5F4FA;
     width: 1600px;
@@ -173,10 +177,11 @@
         display: flex;
         justify-content: space-between;
     }
-    
 }
+//-------------------- TEAM --------------------
 
 
+// -------------------- SVG --------------------
 .svg {
     display: flex;
     margin: 0 auto;
@@ -211,7 +216,7 @@
         }
     }
 }
-
+// -------------------- SVG --------------------
 
 
 
@@ -226,7 +231,7 @@
 .clients {
     padding: 94px 0 94px 0;
 
-    &-h2 {
+    &__h2 {
         margin-bottom: 50px;
         font-family: 'Roboto', sans-serif;
         font-style: normal;

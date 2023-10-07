@@ -30,18 +30,51 @@ header {
   margin: 0 auto;
 }
 
-.header-main {
+.header {
   width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 24px 0;
 }
-
 .header-left {
   display: flex;
   justify-content: space-between;
   width: 520px;
+}
+.header-ul1 {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+  align-items: center;
+}
+.header-right-content:hover .svg-mail {
+  fill: #2196F3;
+  transition: fill 250ms;
+}
+.header-right-content {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-right-content:hover {
+  transition: color 250ms;
+  color: #2196F3;
 }
 
 .logo-link {
@@ -59,15 +92,6 @@ header {
   color: #2196F3;
 }
 
-.header-ul1 {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 281px;
-  align-items: center;
-}
-
 .nav-list-link {
   color: #212121;
   font-family: "Roboto", sans-serif;
@@ -83,7 +107,6 @@ header {
   text-decoration: none;
   color: #212121;
 }
-
 .nav-list-text::after {
   transition: all 500ms;
   position: absolute;
@@ -95,11 +118,9 @@ header {
   border-radius: 2px;
   background: #2196F3;
 }
-
 .nav-list-text:hover::after {
   width: 100%;
 }
-
 .nav-list-text:hover {
   color: #2196F3;
 }
@@ -109,39 +130,9 @@ header {
   color: #212121;
 }
 
-.header-right {
-  display: flex;
-  justify-content: space-between;
-  width: 333px;
-  align-items: center;
-}
-
 .svg-mail {
   margin-right: 10px;
   fill: #757575;
-}
-
-.header-right-content:hover .svg-mail {
-  fill: #2196F3;
-  transition: fill 250ms;
-}
-
-.header-right-content {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-.header-right-content:hover {
-  transition: color 250ms;
-  color: #2196F3;
 }
 
 .footer {
@@ -341,7 +332,7 @@ header {
   background-image: url("../images/bg-hero.jpg");
   background-color: rgba(47, 48, 58, 0.4);
 }
-.hero-little {
+.hero__little {
   font-family: "Roboto" sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -353,7 +344,7 @@ header {
   color: #FFFFFF;
   margin-bottom: 30px;
 }
-.hero-btn {
+.hero__btn {
   border: none;
   display: block;
   background-color: #2196F3;
@@ -387,7 +378,7 @@ header {
   width: 270px;
   height: 248px;
 }
-.features-subtitle {
+.features__subtitle {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -399,7 +390,7 @@ header {
   color: #212121;
   margin-bottom: 10px;
 }
-.features-p {
+.features__p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -412,7 +403,7 @@ header {
 .work {
   margin-bottom: 94px;
 }
-.work-title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   /* 42:36 */
@@ -524,7 +515,7 @@ header {
 .clients {
   padding: 94px 0 94px 0;
 }
-.clients-h2 {
+.clients__h2 {
   margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -629,11 +620,10 @@ header {
   height: 30px;
 }
 .button-close:hover .btn-close__svg {
-  fill: #2196F3;
+  fill: get-color("hover");
   cursor: pointer;
 }
-
-.btn-close__svg {
+.button-close__svg {
   width: 18px;
   height: 18px;
   color: #000000;
@@ -665,7 +655,7 @@ header {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 12px;
-  color: #212121;
+  color: get-color("header");
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -687,7 +677,7 @@ header {
   line-height: normal;
   letter-spacing: 0.12px;
 }
-.modal__label:hover .svg-label {
+.modal__label:hover .modal__svg {
   fill: #2196F3;
 }
 .modal-list {
@@ -703,7 +693,7 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .modal__input:hover {
-  border-color: #2196F3;
+  border-color: get-color("hover");
 }
 .modal__svg {
   position: absolute;
@@ -728,14 +718,14 @@ header {
   resize: none;
 }
 .modal__textarea:hover {
-  border-color: #2196f3;
+  border-color: get-color("hover");
 }
 .modal__accept {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 410px;
-  color: #757575;
+  color: get-color("Hright");
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -761,15 +751,15 @@ header {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background: #2196F3;
+  background: get-color("hover");
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .modal__btn:hover, .modal__btn:focus {
-  background: #188CE8;
+  background: get-color("blue");
   outline: none;
 }
 .modal__link {
-  color: #2196F3;
+  color: get-color("hover");
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
