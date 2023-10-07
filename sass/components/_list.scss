@@ -62,7 +62,7 @@
     }
 
     25%{
-        background-color: #2F303A;
+        background-color: getcolor("footer");
     }
 
     50%{
@@ -78,9 +78,8 @@
     display: flex;
     justify-content: center;
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
+    @extend %base;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.55;
     letter-spacing: 0.54px;
@@ -92,13 +91,12 @@
 /* -----------------OVERLAY--------------------- */
 
 .list-h3{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    @extend %base;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: getcolor("header");
     width: 322px;
     height: 36px;
     margin: 20px 24px 4px;
@@ -107,8 +105,7 @@
 .list-p {
     animation: bounce; 
     animation-duration: 2s; 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    @extend %base;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -118,8 +115,7 @@
 }
 
 .contact-list{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    @extend %base;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

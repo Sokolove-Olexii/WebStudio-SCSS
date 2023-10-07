@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.modal__link, .modal__accept, .modal__textarea, .modal__label, .modal__title, .clients__h2, .team__title, .features__p, .features__subtitle, .hero__btn, .hero__little, .button-p-footer, .contact-mail, .footer-last-h2, .footer-h2, .footer-contact, .nav-list-link, .header-right-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -65,9 +70,7 @@ header {
   align-items: center;
   text-decoration: none;
   color: #757575;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -94,9 +97,7 @@ header {
 
 .nav-list-link {
   color: #212121;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
@@ -146,9 +147,7 @@ header {
   display: flex;
   margin-bottom: 9px;
   color: #FFF;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1, 71%; /* 171.429% */
   letter-spacing: 0.42px;
@@ -164,8 +163,6 @@ header {
 .footer-h2 {
   color: #FFF;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -206,9 +203,7 @@ header {
 .footer-last-h2 {
   margin-bottom: 20px;
   color: #FFF;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
@@ -254,8 +249,6 @@ header {
 .contact-mail {
   display: flex;
   margin-bottom: 9px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -312,9 +305,7 @@ header {
   display: flex;
   color: #FFF;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
@@ -333,8 +324,6 @@ header {
   background-color: rgba(47, 48, 58, 0.4);
 }
 .hero__little {
-  font-family: "Roboto" sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -350,8 +339,6 @@ header {
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto" sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -379,8 +366,6 @@ header {
   height: 248px;
 }
 .features__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -391,8 +376,6 @@ header {
   margin-bottom: 10px;
 }
 .features__p {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -411,7 +394,6 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  color: get-color("header");
 }
 .work-photo-img {
   display: flex;
@@ -427,8 +409,6 @@ header {
 }
 .team__title {
   margin-bottom: 50px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -517,8 +497,6 @@ header {
 }
 .clients__h2 {
   margin-bottom: 50px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -580,7 +558,7 @@ header {
 }
 
 .nav-list a:hover {
-  color: #2196f3;
+  color: #2196F3;
 }
 
 .team-list {
@@ -620,7 +598,7 @@ header {
   height: 30px;
 }
 .button-close:hover .btn-close__svg {
-  fill: get-color("hover");
+  fill: #2196F3;
   cursor: pointer;
 }
 .button-close__svg {
@@ -657,9 +635,7 @@ header {
   margin-bottom: 12px;
   color: get-color("header");
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
@@ -670,9 +646,7 @@ header {
   flex-direction: column;
   margin-bottom: 4px;
   color: #757575;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -693,7 +667,7 @@ header {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .modal__input:hover {
-  border-color: get-color("hover");
+  border-color: #2196F3;
 }
 .modal__svg {
   position: absolute;
@@ -704,9 +678,7 @@ header {
 }
 .modal__textarea {
   color: rgba(117, 117, 117, 0.5);
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
@@ -718,17 +690,15 @@ header {
   resize: none;
 }
 .modal__textarea:hover {
-  border-color: get-color("hover");
+  border-color: #2196F3;
 }
 .modal__accept {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 410px;
-  color: get-color("Hright");
-  font-family: "Roboto", sans-serif;
+  color: #757575;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -751,18 +721,16 @@ header {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background: get-color("hover");
+  background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .modal__btn:hover, .modal__btn:focus {
-  background: get-color("blue");
+  background: #188CE8;
   outline: none;
 }
 .modal__link {
-  color: get-color("hover");
-  font-family: "Roboto", sans-serif;
+  color: #2196F3;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;

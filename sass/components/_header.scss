@@ -29,7 +29,7 @@
     }
 
     &-right-content:hover .svg-mail {
-        fill: #2196F3;
+        fill: getcolor("hover");
         transition: fill 250ms;
     }
     
@@ -38,9 +38,8 @@
         align-items: center;
         text-decoration: none;
         color: #757575;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-style: normal;
+        @extend %base;
+        font-size: 14px;;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
@@ -48,7 +47,7 @@
     
     &-right-content:hover {
         transition: color 250ms;
-        color: #2196F3;
+        color: getcolor("hover");
     }
     
 }
@@ -70,7 +69,7 @@
 }
 
 .Web {
-    color: #2196F3;
+    color: getcolor("hover");
 }
 
 // ---------------------- LOGO -----------------------------
@@ -85,10 +84,9 @@
 // -------------------------- NAV-LIST ---------------------------
 
 .nav-list-link {
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
+    color: getcolor("header");
+    @extend %base;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
@@ -97,7 +95,7 @@
 .nav-list-text {
     position: relative;
     text-decoration: none;
-    color: #212121;
+    color: getcolor("header");
 
     &::after{
         transition: all 500ms;
@@ -108,7 +106,7 @@
         width: 0;
         height: 4px;
         border-radius: 2px;
-        background: #2196F3;
+        background: getcolor("hover");
     }
 
     &:hover::after{
@@ -117,18 +115,18 @@
     
     
     &:hover {
-        color: #2196F3;
+        color: getcolor("hover");
     }
 }
 
 .nav-list a {
     text-decoration: none;
-    color: #212121;
+    color: getcolor("header");
 }
 
 .svg-mail {
     margin-right: 10px;
-    fill: #757575;
+    fill: getcolor("Hright");
 }
 
 // -------------------------- NAV-LIST ---------------------------
