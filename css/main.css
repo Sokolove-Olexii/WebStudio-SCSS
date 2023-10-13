@@ -580,6 +580,30 @@ header {
   color: #fff;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+  .header {
+    padding: 16px 0 16px 15px;
+  }
+  .hero {
+    padding: 118px 60px 118px 60px;
+    width: 480px;
+  }
+  .hero__title {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.61; /* 161.538% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+}
 /* Common container styles. */
 /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
 /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
