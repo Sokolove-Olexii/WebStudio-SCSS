@@ -30,9 +30,56 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
-.container {
-  width: 1600px;
+img,
+button {
+  display: block;
+}
+
+.outer-container {
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .outer-container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .outer-container {
+    min-width: 320px;
+  }
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .inner-container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inner-container {
+    min-width: 320px;
+    max-width: 480px;
+  }
+}
+
+.header .inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .header .inner-container {
+    min-width: 320px;
+  }
 }
 
 .header {
@@ -41,6 +88,16 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   padding: 24px 0;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10px 0;
+  }
 }
 .header-left {
   display: flex;
@@ -580,31 +637,6 @@ header {
   color: #fff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-  .header {
-    padding: 16px 0 16px 15px;
-  }
-  .hero {
-    padding: 118px 60px 118px 60px;
-    width: 480px;
-  }
-  .hero__title {
-    display: flex;
-    justify-content: center;
-    color: #FFF;
-    text-align: center;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 1.61; /* 161.538% */
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
-  }
-}
-/* Common container styles. */
 /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
 /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
 /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/

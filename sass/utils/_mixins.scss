@@ -1,0 +1,25 @@
+@mixin flex ($justify-content:space-between, $align-items:center, $dir:row, $wrap:nowrap){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin socials($bg){
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $bg;
+}
+
+@mixin fonts($f-size:14px, $f-weigt:400, $l-heigt:normal, $t-align:left, $ltr-spacing:normal, $transf:none, $t-dec:none){
+    font-size: $f-size;
+    font-weight: $f-weigt;
+    line-height: $l-height;
+    text-align: $t-align;
+    letter-spacing: $ltr-spacing;
+    text-transform: $transf;
+    text-decoration: $t-dec;
+}
