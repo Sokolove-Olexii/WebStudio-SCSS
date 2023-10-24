@@ -7,7 +7,8 @@
     }
 }
 .header {
-    width: 1200px;
+    position: fixed;
+    // width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -27,6 +28,9 @@
     }
 
     &-ul1 {
+        @media screen and (max-width:480px){
+            display: none;
+        }
         text-decoration: none;
         list-style: none;
         display: flex;
@@ -36,6 +40,14 @@
     }
 
     &-right {
+        @media screen and (max-width: 768px) {
+            @include flex($align-items:flex-start,$dir:column);
+            gap:10px;
+            max-width: 138px;
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
         display: flex;
         justify-content: space-between;
         width: 333px;
@@ -72,6 +84,10 @@
 // ---------------------- LOGO -----------------------------
 
 .logo-link {
+    @media screen and (min-width:768px){
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -104,6 +120,10 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    @media screen and (max-width: 768px) {
+        // @include fonts(12px, $ltr-spacing:0.24px);
+    }
+
 }
 
 .nav-list-text {

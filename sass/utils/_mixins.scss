@@ -14,10 +14,10 @@
     background-color: $bg;
 }
 
-@mixin fonts($f-size:14px, $f-weigt:400, $l-heigt:normal, $t-align:left, $ltr-spacing:normal, $transf:none, $t-dec:none){
+@mixin fonts ($f-size:14px, $f-weigt:400, $l-heigt:normal, $t-align:left, $ltr-spacing:normal, $transf:none, $t-dec:none){
     font-size: $f-size;
     font-weight: $f-weigt;
-    line-height: $l-height;
+    // line-height: $l-height;
     text-align: $t-align;
     letter-spacing: $ltr-spacing;
     text-transform: $transf;
