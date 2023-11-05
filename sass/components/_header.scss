@@ -8,12 +8,10 @@
 }
 .header {
     position: fixed;
-    // width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 24px 0;
-
     @media screen and (max-width:768px){
         padding: 21px 0;
     }

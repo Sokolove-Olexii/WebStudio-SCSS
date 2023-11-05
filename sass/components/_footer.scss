@@ -142,32 +142,10 @@
     padding-bottom: 9px;
 }
 
-.clients-list-cards:hover .svg {
-    transition: fill 250ms;
-    fill: getcolor("hover");
-}
 
-.button-list-card {
-    text-decoration: none;
-}
 
-.button-list-card:hover {
-    color: getcolor("hover");
-}
 
-.clients-list-cards {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    &:hover {
-        transition: border 250ms;
-        border: 1px solid getcolor("hover");
-    }
-}
+
 
 .button-footer-container{
     margin: 0 auto;

@@ -56,15 +56,19 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .inner-container {
     max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner-container {
+    max-width: 480px;
   }
 }
 @media screen and (max-width: 480px) {
   .inner-container {
     min-width: 320px;
-    max-width: 480px;
   }
 }
 
@@ -342,33 +346,6 @@ button {
 
 .contact-list:not(:last-child) {
   padding-bottom: 9px;
-}
-
-.clients-list-cards:hover .svg {
-  transition: fill 250ms;
-  fill: #2196F3;
-}
-
-.button-list-card {
-  text-decoration: none;
-}
-
-.button-list-card:hover {
-  color: #2196F3;
-}
-
-.clients-list-cards {
-  width: 170px;
-  height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
-.clients-list-cards:hover {
-  transition: border 250ms;
-  border: 1px solid #2196F3;
 }
 
 .button-footer-container {

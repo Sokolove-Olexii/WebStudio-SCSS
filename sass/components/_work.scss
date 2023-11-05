@@ -1,0 +1,24 @@
+// -------------------- WORK --------------------
+.work {
+    margin-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        /* 42:36 */
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: getcolor("header");
+    }
+
+    &-photo-img {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto 0;
+        // width: 1200px;
+    }
+}
+// -------------------- WORK --------------------
