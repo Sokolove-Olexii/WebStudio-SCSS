@@ -132,6 +132,7 @@ button {
     flex-wrap: nowrap;
     gap: 10px;
     max-width: 138px;
+    padding-left: 96px;
   }
 }
 @media screen and (max-width: 480px) {

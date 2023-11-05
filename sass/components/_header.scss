@@ -44,6 +44,7 @@
             @include flex($align-items:flex-start,$dir:column);
             gap:10px;
             max-width: 138px;
+            padding-left: 96px;
         }
         @media screen and (max-width: 480px) {
             display: none;
