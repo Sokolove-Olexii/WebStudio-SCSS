@@ -223,9 +223,39 @@ button {
   fill: #757575;
 }
 
+.footer .inner-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1199px) {
+  .footer .inner-container {
+    max-width: 768px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .inner-container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .inner-container {
+    min-width: 320px;
+  }
+}
+
 .footer {
   background: #2F303A;
-  padding: 60px 0 60px;
+  padding: 60px 0;
+  min-width: 320px;
 }
 .footer-text {
   color: #FFFFFF;
@@ -239,13 +269,18 @@ button {
   line-height: 1, 71%; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.footer-main {
-  margin: 0 215px 0 215px;
-  width: 1200px;
-  display: flex;
-}
 .footer-left {
   width: 231px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-left {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .footer-h2 {
   color: #FFF;
@@ -331,6 +366,16 @@ button {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .studio {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.72px;
+    text-transform: none;
+    text-decoration: none;
+  }
 }
 
 .contact-mail {

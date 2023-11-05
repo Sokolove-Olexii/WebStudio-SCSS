@@ -1,6 +1,21 @@
+.footer .inner-container{
+    @include flex(flex-start, flex-start);
+    @media screen and (max-width:1199px){
+        max-width: 768px;
+        @include flex(space-around, baseline, $wrap:wrap);
+        gap: 60px;
+    }
+    @media screen and (max-width:767px){
+        max-width: 480px;
+    }
+    @media screen and (max-width:480px){
+        min-width: 320px;
+    }
+}
 .footer {
     background: getcolor("footer");
-    padding: 60px 0 60px;
+    padding: 60px 0;
+    min-width: 320px;
 
     &-text {
         color: #FFFFFF;
@@ -16,15 +31,13 @@
         line-height: 1,71%; /* 171.429% */
         letter-spacing: 0.42px;
     }
-
-    &-main {
-        margin: 0 215px 0 215px;
-        width: 1200px;
-        display: flex;
-    }
     
     &-left {
         width: 231px;
+        @media screen and (max-width: 1199px){
+            margin: 0;
+            @include flex(center, center, column);
+        }
     }
     
     &-h2 {
@@ -124,6 +137,9 @@
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    @media screen and (max-width:1199px){
+        @include fonts (24px, 700, $ltr-spacing:0.72px);
+    }
 }
 
 .contact-mail {
