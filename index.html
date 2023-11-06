@@ -409,29 +409,47 @@
             </ul>
           </div>
           <!-- Остання секція футеру -->
-          <div class="last-footer-section">
-            <h2 class="footer-last-h2">Підпишіться на розсилку</h2>
-            <ul class="footer-last-ul">
-              <li class="footer-last-list">
-                <label for="" class="footer-label">
-                  <input type="email" class="footer-input" placeholder="E-mail">
-                </label>
-              </li>
-              <li class="footer-last-list">
-                  <button class="footer-last-btn">
-                    <div class="button-footer-container">
-                    <p class="button-p-footer">Підписатися</p>
-                    <svg class="svg-image-footer">
-                      <use href="./images/Icons/symbol-defs.svg#icon-teleg"></use>
-                    </svg>
-                  </div>
-                </button>
-              </li>
-            </ul>
-          </div>
+          <section class="footer-subscribe">
+            <form action="" class="subscribe-form">
+              <!-- <h2 class="footer-last-h2">Підпишіться на розсилку</h2>
+              <ul class="footer-last-ul">
+                <li class="footer-last-list">
+                  <label for="" class="footer-label">
+                    <input type="email" class="footer-input" placeholder="E-mail">
+                  </label>
+                </li>
+                <li class="footer-last-list">
+                    <button class="footer-last-btn">
+                      <div class="button-footer-container">
+                      <p class="button-p-footer">Підписатися</p>
+                      <svg class="svg-image-footer">
+                        <use href="./images/Icons/symbol-defs.svg#icon-teleg"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+              </ul> -->
+              <label class="subscribe-form_label"
+              >Підпишіться на розсилку
+              <input 
+              type="email"
+              placeholder="email"
+              class="subscribe-form_input"
+              title="Введіть пошту"
+              required      
+              />
+              </label>
+              <button type="submit" class="subscribe-form_btn">
+                Підписатися
+                <svg class="subscribe-form_svg">
+                  <use href="./images/Icons/symbol-defs.svg#icon-teleg"></use>
+                </svg>
+              </button>
+            </form>
+          </section>
         </div>
       </footer>
-      </div>
+    </div>
 
 
 
@@ -487,8 +505,6 @@
     <!-- /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
-      
-    </div>
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
