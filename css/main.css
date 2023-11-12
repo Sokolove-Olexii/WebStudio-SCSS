@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.modal__link, .modal__accept, .modal__textarea, .modal__label, .modal__title, .hero__btn, .hero__little, .button-p-footer, .contact-mail, .footer-last-h2, .footer-h2, .footer-contact, .nav-list-link, .header-right-content, .clients__title, .team__title, .features__p, .features__subtitle {
+.modal__link, .modal__accept, .modal__textarea, .modal__label, .modal__title, .hero__btn, .hero__little, .contact-mail, .footer-h2, .footer-contact, .nav-list-link, .header-right-content, .clients__title, .team__title, .features__p, .features__subtitle {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
@@ -115,7 +115,6 @@ button {
 .features-list {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0;
   margin: 0 auto;
 }
 @media screen and (max-width: 1199px) {
@@ -154,7 +153,10 @@ button {
 }
 @media screen and (max-width: 480px) {
   .features__subtitle {
-    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px 0 10px;
   }
 }
 .features__p {
@@ -250,6 +252,7 @@ button {
   margin-bottom: 10px;
 }
 .team-list-paragraph {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -258,9 +261,9 @@ button {
   color: #757575;
 }
 .team-social-media {
-  margin-top: 16px;
-  padding: 0px 32px;
   display: flex;
+  width: 206px;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .team__photo {
@@ -331,6 +334,11 @@ button {
 .clients {
   padding: 94px 0;
   min-width: 320px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .clients {
@@ -459,7 +467,6 @@ button {
 }
 
 .header {
-  position: fixed;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -467,7 +474,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header {
-    padding: 21px 0;
+    padding: 21px 15px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -478,19 +485,25 @@ button {
 .header-left {
   display: flex;
   justify-content: space-between;
-  width: 520px;
 }
 .header-ul1 {
+  width: 285px;
+  margin-left: 92px;
   text-decoration: none;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: 281px;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
   .header-ul1 {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-ul1 {
+    width: 283px;
+    margin-left: 88px;
   }
 }
 .header-right {
@@ -508,7 +521,6 @@ button {
     flex-wrap: nowrap;
     gap: 10px;
     max-width: 138px;
-    padding-left: 96px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -529,6 +541,12 @@ button {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+}
+@media screen and (max-width: 768px) {
+  .header-right-content {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
 }
 .header-right-content:hover {
   transition: color 250ms;
@@ -595,6 +613,23 @@ button {
   margin-right: 10px;
   fill: #757575;
 }
+@media screen and (max-width: 768px) {
+  .svg-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.svg-tel {
+  margin-right: 10px;
+  fill: #757575;
+}
+@media screen and (max-width: 768px) {
+  .svg-tel {
+    width: 10px;
+    height: 14px;
+  }
+}
 
 .footer .inner-container {
   display: flex;
@@ -653,6 +688,9 @@ button {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 .footer-h2 {
@@ -701,39 +739,9 @@ button {
   background-color: #2196F3;
 }
 .footer-mail-list {
+  width: 206px;
   justify-content: space-between;
   display: flex;
-}
-.footer-last-h2 {
-  margin-bottom: 20px;
-  color: #FFF;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-.footer-input {
-  display: flex;
-  padding: 15px 0 15px 16px;
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.footer-last-btn {
-  border: none;
-  border-radius: 4px;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 200px;
-  height: 50px;
-}
-.footer-last-ul {
-  display: flex;
-  justify-content: space-between;
 }
 
 .studio {
@@ -757,6 +765,8 @@ button {
     letter-spacing: 0.72px;
     text-transform: none;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -773,41 +783,6 @@ button {
 
 .contact-list:not(:last-child) {
   padding-bottom: 9px;
-}
-
-.button-footer-container {
-  margin: 0 auto;
-  width: 144px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.last-footer-section {
-  margin-left: 93px;
-  width: 570px;
-}
-@media screen and (max-width: 1199px) {
-  .last-footer-section {
-    padding: 0;
-  }
-}
-
-.button-p-footer {
-  display: flex;
-  color: #FFF;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-}
-
-.svg-image-footer {
-  display: flex;
-  width: 24px;
-  height: 24px;
-  fill: #fff;
 }
 
 .footer-subscribe {
@@ -840,6 +815,7 @@ button {
   }
 }
 .subscribe-form_label {
+  margin-left: 93px;
   color: #F5F4FA;
   display: block;
   width: 358px;
@@ -890,6 +866,7 @@ button {
   border: 1px solid #2196F3;
 }
 .subscribe-form_btn {
+  padding: 13px 28px 13px 28px;
   background-color: #2196F3;
   color: #F5F4FA;
   width: 200px;
@@ -918,11 +895,9 @@ button {
   background-color: rgba(47, 48, 58, 0.4);
   background-position: center;
   background-size: cover;
-  margin-top: 80px;
 }
 @media screen and (max-width: 480px) {
   .hero {
-    margin-top: 60px;
     min-width: 320px;
   }
 }

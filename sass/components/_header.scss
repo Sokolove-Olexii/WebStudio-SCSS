@@ -7,13 +7,12 @@
     }
 }
 .header {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 24px 0;
     @media screen and (max-width:768px){
-        padding: 21px 0;
+        padding: 21px 15px;
     }
     @media screen and (max-width:480px){
         padding: 10px 0;
@@ -22,18 +21,22 @@
     &-left {
         display: flex;
         justify-content: space-between;
-        width: 520px;
     }
 
     &-ul1 {
+        width: 285px;
+        margin-left: 92px;
         @media screen and (max-width:480px){
             display: none;
+        }
+        @media screen and (max-width:768px){
+            width: 283px;
+            margin-left: 88px;
         }
         text-decoration: none;
         list-style: none;
         display: flex;
         justify-content: space-between;
-        width: 281px;
         align-items: center;
     }
 
@@ -42,7 +45,7 @@
             @include flex($align-items:flex-start,$dir:column);
             gap:10px;
             max-width: 138px;
-            padding-left: 96px;
+            // margin-left: 96px;
         }
         @media screen and (max-width: 480px) {
             display: none;
@@ -64,10 +67,14 @@
         text-decoration: none;
         color: #757575;
         @extend %base;
-        font-size: 14px;;
+        font-size: 14px;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
+        @media screen and (max-width:768px){
+            font-size: 12px;
+            letter-spacing: 0.24px;
+        }
     }
     
     &-right-content:hover {
@@ -157,10 +164,30 @@
     color: getcolor("header");
 }
 
+
 .svg-mail {
     margin-right: 10px;
     fill: getcolor("Hright");
+    &{
+        @media screen and (max-width:768px){
+            width: 14px;
+            height: 10px;
+        }
+    }
 }
+
+.svg-tel{
+    margin-right: 10px;
+    fill: getcolor("Hright");
+    &{
+        @media screen and (max-width:768px){
+            width: 10px;
+            height: 14px;
+        }
+    }
+}
+
+
 
 // -------------------------- NAV-LIST ---------------------------
 // -------------------------- NAV-LIST ---------------------------
