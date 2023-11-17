@@ -186,6 +186,7 @@ button {
 .team {
   display: flex;
   background: #F5F4FA;
+  padding: 94px 0;
 }
 @media screen and (max-width: 768px) {
   .team {

@@ -13,7 +13,7 @@
 .team {
     display: flex;
     background: getcolor("white");
-    // padding: 94px;
+    padding: 94px 0;
     @media screen  and (max-width:768px){
         padding: 60px 0;
     }
