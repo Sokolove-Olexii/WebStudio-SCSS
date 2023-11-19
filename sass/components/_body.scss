@@ -4,14 +4,14 @@
     background-color: rgba(47, 48, 58, 0.4);
     background-position: center;
     background-size: cover;
-    @media screen and (max-width:480px){
-        min-width: 320px;
-    }
-    @media screen and (max-width:768px){
+    // @media screen and (max-width:480px){
+    //     min-width: 320px;
+    // }
+    @media screen and (max-width:1199px){
         padding: 118px 0;
     }
 
-    &__little {
+    &__title {
         @extend %base;
         font-weight: 900;
         font-size: 44px;
@@ -21,7 +21,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 30px;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:1199px) {
             // @include fonts(44px, 900, 1.36, center, 2.64px, uppercase);
             font-size: 26px;
             line-height: 1.61;
@@ -30,7 +30,7 @@
     }
     
     &__btn {
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:1199px) {
             width:200px;
         }
         border: none;
@@ -83,48 +83,9 @@
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-.bg-img {
-    display: flex;
-    background-image: url('../images/Icons/ant.svg');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 70px;
-    height: 70px;
-}
 
-.bg-img-2 {
-    display: flex;
-    background-image: url('../images/Icons/clock.svg');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 70px;
-    height: 70px;
-}
 
-.bg-img-3 {
-    display: flex;
-    background-image: url('../images/Icons/diag.svg');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 70px;
-    height: 70px;
-}
 
-.bg-img-4 {
-    display: flex;
-    background-image: url('../images/Icons/astr.svg');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 70px;
-    height: 70px;
-}
-
-.bg-color-img {
-    padding: 25px 0 25px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-}
 
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------

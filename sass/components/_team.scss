@@ -1,15 +1,4 @@
 // -------------------- TEAM --------------------
-.team .inner-container{
-    @media screen  and (max-width:1199px){
-        max-width: 768px;
-    }
-    @media screen  and (max-width:767px){
-        max-width: 480px;
-    }
-    @media screen  and (max-width:480px){
-        min-width: 320px;
-    }
-}
 .team {
     display: flex;
     background: getcolor("white");
@@ -34,13 +23,16 @@
     }
 
     &-ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
         @media screen and (max-width:1199px){
             @include flex($wrap:wrap);
             gap: 30px;
         }
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
+        @media screen and (max-width:767px){
+            @include flex(center, $wrap:wrap);
+        }
     }
 
     &__li {
@@ -55,7 +47,6 @@
 
     &-work-list {
         list-style: none;
-
     }
 
     &-list-title {

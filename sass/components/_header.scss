@@ -1,20 +1,16 @@
 // ---------------------- HEADER ----------------------------
 .header .inner-container{
     @include flex();
-
-    @media screen and (max-width:480px){
-        min-width: 320px;
-    }
 }
 .header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 24px 0;
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1199px){
         padding: 21px 15px;
     }
-    @media screen and (max-width:480px){
+    @media screen and (max-width:767px){
         padding: 10px 0;
     }
 
@@ -24,36 +20,30 @@
     }
 
     &-ul1 {
-        width: 285px;
-        margin-left: 92px;
-        @media screen and (max-width:480px){
-            display: none;
-        }
-        @media screen and (max-width:768px){
-            width: 283px;
-            margin-left: 88px;
-        }
-        text-decoration: none;
-        list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 285px;
+        margin-left: 92px;
+        @media screen and (max-width:767px){
+            display: none;
+        }
     }
 
     &-right {
-        @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 333px;
+        align-items: center;
+        @media screen and (max-width: 1199px) {
             @include flex($align-items:flex-start,$dir:column);
             gap:10px;
             max-width: 138px;
             // margin-left: 96px;
         }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
-        display: flex;
-        justify-content: space-between;
-        width: 333px;
-        align-items: center;
     }
 
     &-right-content:hover .svg-mail {
