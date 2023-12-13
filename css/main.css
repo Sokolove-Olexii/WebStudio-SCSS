@@ -459,7 +459,7 @@ button {
 }
 @media screen and (max-width: 1199px) {
   .header {
-    padding: 21px 15px;
+    padding: 21px 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -540,7 +540,7 @@ button {
   color: black;
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .logo-link {
     font-size: 24px;
     letter-spacing: 0.72px;
@@ -988,6 +988,11 @@ button {
   padding: 40px;
   z-index: 100;
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
 .modal__title {
   display: flex;
   justify-content: center;
@@ -999,6 +1004,11 @@ button {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 .modal__label {
   position: relative;
