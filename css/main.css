@@ -256,28 +256,37 @@ button {
   margin: 0 auto;
   justify-content: space-between;
 }
-.team__photo {
+.team__thumb {
   width: 270px;
   height: 260px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1199px) {
-  .team__photo {
+  .team__thumb {
     width: 354px;
     height: 374px;
   }
 }
 @media screen and (max-width: 767px) {
-  .team__photo {
+  .team__thumb {
     width: 450px;
     height: 460px;
   }
 }
 @media screen and (max-width: 480px) {
-  .team__photo {
+  .team__thumb {
     min-width: 290px;
     max-width: 450px;
+    width: 100%;
   }
+}
+.team__photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .work {
@@ -519,7 +528,7 @@ button {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .header-right-content {
     font-size: 12px;
     letter-spacing: 0.24px;
@@ -643,12 +652,12 @@ button {
   min-width: 320px;
 }
 .footer-text {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer-contact {
   display: flex;
   margin-bottom: 9px;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1, 71%; /* 171.429% */
@@ -671,7 +680,7 @@ button {
   }
 }
 .footer-h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -724,7 +733,7 @@ button {
 .studio {
   display: block;
   margin-bottom: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -831,7 +840,7 @@ button {
 @media screen and (max-width: 1199px) {
   .subscribe-form_input {
     width: 450px;
-    margin: 0;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -949,7 +958,7 @@ button {
   justify-content: center;
   stroke-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
-  background-color: #FFF;
+  background-color: #fff;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -1030,11 +1039,13 @@ button {
   gap: 10px;
 }
 .modal__input {
-  padding: 11px 0 11px 42px;
+  padding: 11px 12px;
   margin-top: 4px;
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  cursor: pointer;
 }
 .modal__input:hover {
   border-color: #2196F3;
@@ -1045,6 +1056,7 @@ button {
   left: 12px;
   width: 18px;
   height: 18px;
+  fill: #212121;
 }
 .modal__textarea {
   color: rgba(117, 117, 117, 0.5);
@@ -1055,26 +1067,28 @@ button {
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
+  cursor: pointer;
 }
 .modal__textarea:hover {
   border-color: #2196F3;
 }
 .modal__accept {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 410px;
+  width: 100%;
   color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
-  display: flex;
-  margin: 20px 0 30px 12px;
-  justify-content: space-between;
+  margin: 20px 0 30px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__accept {
+    font-size: 12px;
+    letter-spacing: 0.36px;
+  }
 }
 .modal__checkbox {
   cursor: pointer;
@@ -1105,6 +1119,12 @@ button {
   line-height: 24px;
   letter-spacing: 0.42px;
   text-decoration: underline;
+}
+@media screen and (max-width: 1199px) {
+  .modal__link {
+    font-size: 12px;
+    letter-spacing: 0.36px;
+  }
 }
 
 /* modal */
@@ -1148,7 +1168,7 @@ button {
 }
 .hidden-p {
   display: flex;
-  color: #FFF;
+  color: #fff;
   justify-content: center;
   text-align: center;
   font-family: "Roboto", sans-serif;

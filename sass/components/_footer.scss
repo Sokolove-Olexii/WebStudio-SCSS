@@ -1,226 +1,207 @@
-.footer .inner-container{
-    @include flex(flex-start, flex-start);
-    @media screen and (max-width:1199px){
-        max-width: 768px;
-        @include flex(space-around, baseline, $wrap:wrap);
-        gap: 60px;
-    }
-    @media screen and (max-width:767px){
-        max-width: 480px;
-    }
-    @media screen and (max-width:480px){
-        min-width: 320px;
-    }
+.footer .inner-container {
+  @include flex(flex-start, flex-start);
+  @media screen and (max-width: 1199px) {
+    max-width: 768px;
+    @include flex(space-around, baseline, $wrap: wrap);
+    gap: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 480px) {
+    min-width: 320px;
+  }
 }
 .footer {
-    background: getcolor("footer");
-    padding: 60px 0;
-    min-width: 320px;
+  background: getcolor("footer");
+  padding: 60px 0;
+  min-width: 320px;
 
-    &-text {
-        color: #FFFFFF;
-    }
+  &-text {
+    color: #ffffff;
+  }
 
-    &-contact {
-        display: flex;
-        margin-bottom: 9px;
-        color: #FFF;
-        @extend %base;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1,71%; /* 171.429% */
-        letter-spacing: 0.42px;
-    }
-    
-    &-left {
-        width: 231px;
-        @media screen and (max-width: 1199px){
-            margin: 0;
-            @include flex(center, center, column);
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-    }
-    
-    &-h2 {
-        color: #FFF;
-        font-size: 14px;
-        @extend %base;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-    }
+  &-contact {
+    display: flex;
+    margin-bottom: 9px;
+    color: #fff;
+    @extend %base;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1, 71%; /* 171.429% */
+    letter-spacing: 0.42px;
+  }
 
-    &-right {
-        @media screen and (max-width:1199px) {
-            padding: 0;
-            margin: 0;
-            @include flex(center, center, $dir:column);
-        }
-        padding-top: 12px;
-        margin-left: 70px;
-        width: 206px;
-        height: 80px;
+  &-left {
+    width: 231px;
+    @media screen and (max-width: 1199px) {
+      margin: 0;
+      @include flex(center, center, column);
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
-    
-    &-svg-content {
-        width: 20px;
-        height: 20px;
-        fill: #fff;
+  }
+
+  &-h2 {
+    color: #fff;
+    font-size: 14px;
+    @extend %base;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &-right {
+    @media screen and (max-width: 1199px) {
+      padding: 0;
+      margin: 0;
+      @include flex(center, center, $dir: column);
     }
-    
-    &-list-a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background: rgba(205, 214, 219, 0.1);
-        width: 44px;
-        height: 44px;
-    }
-    
-    &-list-a:hover {
-        transition: background-color 250ms;
-        border-radius: 50%;
-        background-color:getcolor("hover");
-    }
-    
-    &-mail-list {
-        width: 206px;
-        justify-content: space-between;
-        display: flex;
-    }
+    padding-top: 12px;
+    margin-left: 70px;
+    width: 206px;
+    height: 80px;
+  }
+
+  &-svg-content {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  &-list-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(205, 214, 219, 0.1);
+    width: 44px;
+    height: 44px;
+  }
+
+  &-list-a:hover {
+    transition: background-color 250ms;
+    border-radius: 50%;
+    background-color: getcolor("hover");
+  }
+
+  &-mail-list {
+    width: 206px;
+    justify-content: space-between;
+    display: flex;
+  }
 }
 
 .studio {
-    display: block;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    @media screen and (max-width:1199px){
-        @include fonts (24px, 700, $ltr-spacing:0.72px);
-        display: flex;
-        justify-content: center;
-    }
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    @include fonts(24px, 700, $ltr-spacing: 0.72px);
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contact-mail {
-    display: flex;
-    margin-bottom: 9px;
-    @extend %base;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
+  display: flex;
+  margin-bottom: 9px;
+  @extend %base;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 .contact-list:not(:last-child) {
-    padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer-subscribe{
-    width: 570px;
-    padding-top: 12px;
-    @media screen and (max-width:1199px) {
-        padding: 0;
-    }
+.footer-subscribe {
+  width: 570px;
+  padding-top: 12px;
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+  }
 }
 
 .subscribe-form {
-    width: 100%;
-    min-width: 320px;
-    @include flex(flex-start, flex-end);
-    @media screen and (max-width:1199px) {
-        @include flex(flex-start, center, column);
-        gap: 20px;
-    }
+  width: 100%;
+  min-width: 320px;
+  @include flex(flex-start, flex-end);
+  @media screen and (max-width: 1199px) {
+    @include flex(flex-start, center, column);
+    gap: 20px;
+  }
 
-    &_label{
-        margin-left: 93px;
-        color: getcolor("white");
-        display: block;
-        width: 358px;
-        @include fonts(14px, 700, 1.71, left, 0.42px, uppercase);
-        margin-right: 12px;
-        @media screen and (max-width:1199px){
-            width: 450px;
-            text-align: center;
-            margin: 0;
-        }
-        @media screen and (max-width:480px){
-            width: 100%;
-        }
+  &_label {
+    margin-left: 93px;
+    color: getcolor("white");
+    display: block;
+    width: 358px;
+    @include fonts(14px, 700, 1.71, left, 0.42px, uppercase);
+    margin-right: 12px;
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+      text-align: center;
+      margin: 0;
     }
-    &_input{
-        width: 358px;
-        height: 50px;
-        border-radius: 4px;
-        border: 1px solid getcolor("white");
-        background-color: transparent;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        padding: 0 16px;
-        margin-top: 20px;
-        color: white;
-        outline: none;
-        @media screen and (max-width:1199px){
-            width: 450px;
-            margin: 0;
-        }
-        @media screen and (max-width:480px){
-            width: 100%;
-        }
-        &:hover, &:focus{
-            border: 1px solid getcolor("hover");
-        }
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
-    &_btn{
-        padding: 13px 28px 13px 28px;
-        @media screen and (max-width:1199px) {
-            gap: 12px;
-        }
-        background-color: getcolor("hover");
-        color: getcolor("white");
-        width: 200px;
-        height: 50px;
-        @include flex(center);
-        gap: 10px;
-        @extend %button;
+  }
+  &_input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid getcolor("white");
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 0 16px;
+    margin-top: 20px;
+    color: white;
+    outline: none;
+    @media screen and (max-width: 1199px) {
+      width: 450px;
+      margin-top: 20px;
     }
-    &_svg{
-        width: 24px;
-        height: 24px;
-        fill: getcolor("white");
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
+    &:hover,
+    &:focus {
+      border: 1px solid getcolor("hover");
+    }
+  }
+  &_btn {
+    padding: 13px 28px 13px 28px;
+    @media screen and (max-width: 1199px) {
+      gap: 12px;
+    }
+    background-color: getcolor("hover");
+    color: getcolor("white");
+    width: 200px;
+    height: 50px;
+    @include flex(center);
+    gap: 10px;
+    @extend %button;
+  }
+  &_svg {
+    width: 24px;
+    height: 24px;
+    fill: getcolor("white");
+  }
 }

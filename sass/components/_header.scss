@@ -1,188 +1,172 @@
 // ---------------------- HEADER ----------------------------
-.header .inner-container{
-    @include flex();
+.header .inner-container {
+  @include flex();
 }
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 24px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 21px 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+
+  &-left {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 24px 0;
-    @media screen and (max-width:1199px){
-        padding: 21px 0;
-    }
-    @media screen and (max-width:767px){
-        padding: 10px 0;
-    }
+  }
 
-    &-left {
-        display: flex;
-        justify-content: space-between;
+  &-ul1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 285px;
+    margin-left: 92px;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
+  }
 
-    &-ul1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 285px;
-        margin-left: 92px;
-        @media screen and (max-width:767px){
-            display: none;
-        }
+  &-right {
+    display: flex;
+    justify-content: space-between;
+    width: 333px;
+    align-items: center;
+    @media screen and (max-width: 1199px) {
+      @include flex($align-items: flex-start, $dir: column);
+      gap: 10px;
+      max-width: 138px;
+      // margin-left: 96px;
     }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 
-    &-right {
-        display: flex;
-        justify-content: space-between;
-        width: 333px;
-        align-items: center;
-        @media screen and (max-width: 1199px) {
-            @include flex($align-items:flex-start,$dir:column);
-            gap:10px;
-            max-width: 138px;
-            // margin-left: 96px;
-        }
-        @media screen and (max-width: 767px) {
-            display: none;
-        }
-    }
+  &-right-content:hover .svg-mail {
+    fill: getcolor("hover");
+    transition: fill 250ms;
+  }
 
-    &-right-content:hover .svg-mail {
-        fill: getcolor("hover");
-        transition: fill 250ms;
+  &-right-content {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #757575;
+    @extend %base;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      letter-spacing: 0.24px;
     }
-    
-    &-right-content {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: #757575;
-        @extend %base;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-        @media screen and (max-width:768px){
-            font-size: 12px;
-            letter-spacing: 0.24px;
-        }
-    }
-    
-    &-right-content:hover {
-        transition: color 250ms;
-        color: getcolor("hover");
-    }
-    
+  }
+
+  &-right-content:hover {
+    transition: color 250ms;
+    color: getcolor("hover");
+  }
 }
 
 // ---------------------- HEADER ----------------------------
 
-
 // ---------------------- LOGO -----------------------------
 
 .logo-link {
-    @media screen and (max-width:768px){
-        font-size: 24px;
-        letter-spacing: 0.72px;
-    }
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: black;
-    text-decoration: none;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    letter-spacing: 0.72px;
+  }
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
 }
 
 .Web {
-    color: getcolor("hover");
+  color: getcolor("hover");
 }
 
 // ---------------------- LOGO -----------------------------
-
-
-
-
-
 
 // -------------------------- NAV-LIST ---------------------------
 // -------------------------- NAV-LIST ---------------------------
 // -------------------------- NAV-LIST ---------------------------
 
 .nav-list-link {
-    color: getcolor("header");
-    @extend %base;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    @media screen and (max-width: 768px) {
-        // @include fonts(12px, $ltr-spacing:0.24px);
-    }
-
+  color: getcolor("header");
+  @extend %base;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  @media screen and (max-width: 768px) {
+    // @include fonts(12px, $ltr-spacing:0.24px);
+  }
 }
 
 .nav-list-text {
-    position: relative;
-    text-decoration: none;
-    color: getcolor("header");
+  position: relative;
+  text-decoration: none;
+  color: getcolor("header");
 
-    &::after{
-        transition: all 500ms;
-        position: absolute;
-        top: 44px;
-        left: 0;
-        content: '';
-        width: 0;
-        height: 4px;
-        border-radius: 2px;
-        background: getcolor("hover");
-    }
+  &::after {
+    transition: all 500ms;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: getcolor("hover");
+  }
 
-    &:hover::after{
-        width: 100%;
-    }
-    
-    
-    &:hover {
-        color: getcolor("hover");
-    }
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:hover {
+    color: getcolor("hover");
+  }
 }
 
 .nav-list a {
-    text-decoration: none;
-    color: getcolor("header");
+  text-decoration: none;
+  color: getcolor("header");
 }
-
 
 .svg-mail {
-    margin-right: 10px;
-    fill: getcolor("Hright");
-    &{
-        @media screen and (max-width:768px){
-            width: 14px;
-            height: 10px;
-        }
+  margin-right: 10px;
+  fill: getcolor("Hright");
+  & {
+    @media screen and (max-width: 768px) {
+      width: 14px;
+      height: 10px;
     }
+  }
 }
 
-.svg-tel{
-    margin-right: 10px;
-    fill: getcolor("Hright");
-    &{
-        @media screen and (max-width:768px){
-            width: 10px;
-            height: 14px;
-        }
+.svg-tel {
+  margin-right: 10px;
+  fill: getcolor("Hright");
+  & {
+    @media screen and (max-width: 768px) {
+      width: 10px;
+      height: 14px;
     }
+  }
 }
 
-
-
 // -------------------------- NAV-LIST ---------------------------
 // -------------------------- NAV-LIST ---------------------------
 // -------------------------- NAV-LIST ---------------------------
-
-
-
-
