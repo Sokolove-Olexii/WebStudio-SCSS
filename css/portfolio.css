@@ -504,11 +504,53 @@ button {
   fill: #F5F4FA;
 }
 
+.main .inner-container {
+  padding: 0;
+}
+@media screen and (max-width: 1199px) {
+  .main .inner-container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .inner-container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main .inner-container {
+    min-width: 320px;
+  }
+}
+
+.main {
+  padding: 94px 0;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 60px 0;
+  }
+}
+
 .button-ul {
   display: flex;
   justify-content: space-between;
   width: 575px;
-  margin: 86px 512px 34px;
+  margin: 0 auto 50px;
+  gap: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .button-ul {
+    margin: 0 auto 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-ul {
+    margin: 0 auto 40px;
+    max-width: 326px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .button-li {
