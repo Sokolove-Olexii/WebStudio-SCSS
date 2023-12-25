@@ -10,6 +10,11 @@
     @media screen and (max-width:1199px){
         padding: 118px 0;
     }
+    @media screen and (min-width:1200px) {
+        @media (min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:192dpi), (min-resolution:2dppx){
+            background-image: url("../../images/@2x/hero-bg@2x.jpg");
+        }
+    }
 
     &__title {
         @extend %base;

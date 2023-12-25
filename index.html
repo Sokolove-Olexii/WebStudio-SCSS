@@ -20,6 +20,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body data-aos="fade-up">
     <div class="outer-container">
       <!-- header -->
@@ -146,6 +147,7 @@
                   src="./images/doing-2.jpg"
                   alt="picture"
                   class="photo-do"
+                  srcset="../../images/@2x/comp@2x.jpg"
                 />
                 <div class="hidden">
                   <p class="hidden-p">Десктопні додатки</p>
@@ -158,6 +160,7 @@
                   src="./images/doing-3.jpg"
                   alt="picture"
                   class="photo-do"
+                  srcset="../../images/@2x/code@2x.jpg"
                 />
                 <div class="hidden">
                   <p class="hidden-p">Мобільні додатки</p>
@@ -170,6 +173,7 @@
                   src="./images/doing-1.jpg"
                   alt="picture"
                   class="photo-do"
+                  srcset="../../images/@2x/rgb@2x.jpg"
                 />
                 <div class="hidden">
                   <p class="hidden-p">Дизайнерські рішення</p>
@@ -187,11 +191,20 @@
                 <div class="team-div">
                   <!-- Ігор -->
                   <div class="team__thumb">
-                    <img
-                      src="./images/ihor.jpg"
-                      alt="Ігор"
-                      class="team__photo"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/ihor.jpg            1x,
+                          ../../images/@2x/Igor@2x.jpg 2x
+                        "
+                        media="(min-width: 1199px)"
+                      />
+                      <img
+                        src="./images/ihor.jpg"
+                        alt="продукт"
+                        class="team__photo"
+                      />
+                    </picture>
                   </div>
                   <h4 class="team-list-title">Ігор Дем'яненко</h4>
                   <p class="team-list-paragraph">Product Designer</p>
@@ -238,11 +251,20 @@
               <li class="team__li">
                 <div class="team-div">
                   <div class="team__thumb">
-                    <img
-                      src="./images/olga.jpg"
-                      alt="Ольга"
-                      class="team__photo"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/olga.jpg            1x,
+                          ../../images/@2x/Olga@2x.jpg 2x
+                        "
+                        media="(min-width: 1199px)"
+                      />
+                      <img
+                        src="./images/olga.jpg"
+                        alt="продукт"
+                        class="team__photo"
+                      />
+                    </picture>
                   </div>
                   <h4 class="team-list-title">Ольга Рєпіна</h4>
                   <p class="team-list-paragraph">Frontend Developer</p>
@@ -290,11 +312,20 @@
               <li class="team__li">
                 <div class="team-div">
                   <div class="team__thumb">
-                    <img
-                      src="./images/mikola.jpg"
-                      alt="Микола"
-                      class="team__photo"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mikola.jpg           1x,
+                          ../../images/@2x/Taras@2x.jpg 2x
+                        "
+                        media="(min-width: 1199px)"
+                      />
+                      <img
+                        src="./images/mikola.jpg"
+                        alt="продукт"
+                        class="team__photo"
+                      />
+                    </picture>
                   </div>
                   <h4 class="team-list-title">Микола Тарасов</h4>
                   <p class="team-list-paragraph">Marketing</p>
@@ -342,11 +373,20 @@
               <li class="team__li">
                 <div class="team-div">
                   <div class="team__thumb">
-                    <img
-                      src="./images/mykhail.jpg"
-                      alt="Михайло"
-                      class="team__photo"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/mykhail.jpg            1x,
+                          ../../images/@2x/Mikhail@2x.jpg 2x
+                        "
+                        media="(min-width: 1199px)"
+                      />
+                      <img
+                        src="./images/mykhail.jpg"
+                        alt="продукт"
+                        class="team__photo"
+                      />
+                    </picture>
                   </div>
                   <h4 class="team-list-title">Михайло Єрмаков</h4>
                   <p class="team-list-paragraph">UI Designer</p>

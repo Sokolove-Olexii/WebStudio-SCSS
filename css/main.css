@@ -313,6 +313,10 @@ button {
   width: 1200px;
 }
 
+.photo-do {
+  width: 370px;
+}
+
 /* CLIENTS-LIST */
 @media screen and (max-width: 1199px) {
   .clients .inner-container {
@@ -885,6 +889,11 @@ button {
 @media screen and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/@2x/hero-bg@2x.jpg");
   }
 }
 .hero__title {
