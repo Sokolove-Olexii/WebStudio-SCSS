@@ -62,8 +62,32 @@
                 +38 096 111 11 11</a
               >
             </div>
+
+            <div class="container">
+              <button
+                class="menu-toggle"
+                data-mob-menu-close
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+
+
+        
       </header>
 
       <!-- main-container -->
@@ -641,8 +665,45 @@
     <!-- /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
+
+      <!-- Mobile menu -->
+      <div class="div-mob-menu is-hidden">
+        <form class="form-mob-menu is-hidden">
+          <button class="button-mob-menu" type="button" data-mob-menu-open>
+            <svg class="mob-menu__close">
+              <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          
+          <section class="mobile-menu">
+            <ul class="mobile-menu-list">
+              <li><a href="#" class="mobile-menu-li">Студія</a></li>
+              <li><a href="#" class="mobile-menu-li">Портфоліо</a></li>
+              <li><a href="#" class="mobile-menu-li">Контакти</a></li>
+            </ul>
+            <ul>
+              <li><a href="tel:+380961111111" class="mobile-menu__telcontacts"
+                >+38 096 111 11 11</a
+              ></li>
+              <li><a href="mailto:info@devstudio.com" class="mobile-menu__mailcontacts"
+                >info@devstudio.com</a
+              ></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="mobile-menu__media">Instagram</a></li>
+              <li><a href="#" class="mobile-menu__media">Twitter</a></li>
+              <li><a href="#" class="mobile-menu__media">Facebook</a></li>
+              <li><a href="#" class="mobile-menu__media">LinkedIn</a></li>
+            </ul>
+          </section>
+        </form>
+      </div>
+      <!-- Mobile menu -->
+
+
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mob-menu.js"></script>
     <script>
       AOS.init();
     </script>
