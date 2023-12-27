@@ -64,10 +64,7 @@
             </div>
 
             <div class="container">
-              <button
-                class="menu-toggle"
-                data-mob-menu-close
-              >
+              <button class="menu-toggle" data-mob-menu-close>
                 <svg
                   width="24"
                   height="24"
@@ -85,9 +82,6 @@
             </div>
           </div>
         </div>
-
-
-        
       </header>
 
       <!-- main-container -->
@@ -218,7 +212,7 @@
                     <picture>
                       <source
                         srcset="
-                          ./images/ihor.jpg            1x,
+                          ./images/ihor.jpg         1x,
                           ../images/@2x/Igor@2x.jpg 2x
                         "
                         media="(min-width: 1199px)"
@@ -278,7 +272,7 @@
                     <picture>
                       <source
                         srcset="
-                          ./images/olga.jpg            1x,
+                          ./images/olga.jpg         1x,
                           ../images/@2x/Olga@2x.jpg 2x
                         "
                         media="(min-width: 1199px)"
@@ -339,7 +333,7 @@
                     <picture>
                       <source
                         srcset="
-                          ./images/mikola.jpg           1x,
+                          ./images/mikola.jpg        1x,
                           ../images/@2x/Taras@2x.jpg 2x
                         "
                         media="(min-width: 1199px)"
@@ -400,7 +394,7 @@
                     <picture>
                       <source
                         srcset="
-                          ./images/mykhail.jpg            1x,
+                          ./images/mykhail.jpg         1x,
                           ../images/@2x/Mikhail@2x.jpg 2x
                         "
                         media="(min-width: 1199px)"
@@ -666,40 +660,47 @@
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
 
-      <!-- Mobile menu -->
-      <div class="div-mob-menu is-hidden">
-        <form class="form-mob-menu is-hidden">
-          <button class="button-mob-menu" type="button" data-mob-menu-open>
-            <svg class="mob-menu__close">
-              <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
-            </svg>
-          </button>
-          
-          <section class="mobile-menu">
-            <ul class="mobile-menu-list">
-              <li><a href="./index.html" class="mobile-menu-li">Студія</a></li>
-              <li><a href="./Portfolio.html" class="mobile-menu-li">Портфоліо</a></li>
-              <li><a href="#" class="mobile-menu-li">Контакти</a></li>
-            </ul>
-            <ul>
-              <li><a href="tel:+380961111111" class="mobile-menu__telcontacts"
-                >+38 096 111 11 11</a
-              ></li>
-              <li><a href="mailto:info@devstudio.com" class="mobile-menu__mailcontacts"
-                >info@devstudio.com</a
-              ></li>
-            </ul>
-            <ul>
-              <li><a href="#" class="mobile-menu__media">Instagram</a></li>
-              <li><a href="#" class="mobile-menu__media">Twitter</a></li>
-              <li><a href="#" class="mobile-menu__media">Facebook</a></li>
-              <li><a href="#" class="mobile-menu__media">LinkedIn</a></li>
-            </ul>
-          </section>
-        </form>
-      </div>
-      <!-- Mobile menu -->
+    <!-- Mobile menu -->
+    <div class="div-mob-menu is-hidden">
+      <form class="form-mob-menu is-hidden">
+        <button class="button-mob-menu" type="button" data-mob-menu-open>
+          <svg class="mob-menu__close">
+            <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
 
+        <section class="mobile-menu">
+          <ul class="mobile-menu-list">
+            <li><a href="./index.html" class="mobile-menu-li">Студія</a></li>
+            <li>
+              <a href="./Portfolio.html" class="mobile-menu-li">Портфоліо</a>
+            </li>
+            <li><a href="#" class="mobile-menu-li">Контакти</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="tel:+380961111111" class="mobile-menu__telcontacts"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__mailcontacts"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#" class="mobile-menu__media">Instagram</a></li>
+            <li><a href="#" class="mobile-menu__media">Twitter</a></li>
+            <li><a href="#" class="mobile-menu__media">Facebook</a></li>
+            <li><a href="#" class="mobile-menu__media">LinkedIn</a></li>
+          </ul>
+        </section>
+      </form>
+    </div>
+    <!-- Mobile menu -->
 
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
