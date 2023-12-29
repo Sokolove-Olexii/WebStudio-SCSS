@@ -98,3 +98,20 @@
   line-height: 1.22;
   letter-spacing: 0.36px;
 }
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
+}
+
+// @keyframes mobile-menu {
+//   from {
+//     /* pushes the sun down past the viewport */
+//     transform: translateY(110vh);
+//   }
+//   to {
+//     /* returns the sun to its default position */
+//     transform: translateY(0);
+//   }
+// }
