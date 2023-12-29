@@ -608,6 +608,11 @@ button {
   margin: 0 auto;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .list-products {
+    justify-content: center;
+  }
+}
 .list-products__li {
   background: #ffffff;
   border: 1px solid #eeeeee;
