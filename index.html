@@ -24,8 +24,8 @@
   <body data-aos="fade-up">
     <div class="outer-container">
       <!-- header -->
-      <header>
-        <div class="header">
+      <header class="header">
+
           <div class="inner-container">
             <nav>
               <div class="header-left">
@@ -62,26 +62,13 @@
                 +38 096 111 11 11</a
               >
             </div>
-
-            <div class="container">
-              <button class="menu-toggle" data-mob-menu-close>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+            <button class="menu-toggle" data-open-Menu>
+              <svg class="menu-toggle__svg">
+                <use href="./images/Icons/symbol-defs.svg#menu"></use>
+              </svg>
+            </button>
           </div>
-        </div>
+
       </header>
 
       <!-- main-container -->
@@ -661,9 +648,8 @@
       /* ------------------------ВСПЛИВАЮЧЕ ВІКНО -----------------*/ -->
 
     <!-- Mobile menu -->
-    <div class="div-mob-menu is-hidden">
-      <form class="form-mob-menu is-hidden">
-        <button class="button-mob-menu" type="button" data-mob-menu-open>
+    <div class="menu is-hidden">
+        <button class="button-mob-menu" type="button" data-close-Menu>
           <svg class="mob-menu__close">
             <use href="./images/Icons/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -677,28 +663,30 @@
             </li>
             <li><a href="#" class="mobile-menu-li">Контакти</a></li>
           </ul>
-          <ul>
+          <ul class="contacts-list">
             <li>
-              <a href="tel:+380961111111" class="mobile-menu__telcontacts"
+              <a href="tel:+380961111111" class="contacts-list__link"
                 >+38 096 111 11 11</a
               >
             </li>
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="mobile-menu__mailcontacts"
+                class="contacts-list__mail"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
-          <ul>
-            <li><a href="#" class="mobile-menu__media">Instagram</a></li>
-            <li><a href="#" class="mobile-menu__media">Twitter</a></li>
-            <li><a href="#" class="mobile-menu__media">Facebook</a></li>
-            <li><a href="#" class="mobile-menu__media">LinkedIn</a></li>
+          <ul class="social-list">
+            <li><a href="#" class="social-list__media">Instagram</a></li>
+            <!-- li*3 + |  -->
+            <li><a href="#" class="social-list__media">Twitter</a></li>
+
+            <li><a href="#" class="social-list__media">Facebook</a></li>
+
+            <li><a href="#" class="social-list__media">LinkedIn</a></li>
           </ul>
         </section>
-      </form>
     </div>
     <!-- Mobile menu -->
     <script src="./js/modal.js"></script>

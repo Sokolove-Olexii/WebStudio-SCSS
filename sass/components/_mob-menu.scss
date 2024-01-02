@@ -1,24 +1,37 @@
-.menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+.menu {
+  margin: 0;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: #FFF;
+  z-index: 99;
+  overflow: auto; //more content = scroll
+
+  &-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    display: none;
     background-color: transparent;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
-    outline: none;
-}
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
+    @media (max-width: 767px) {
+        display: block;
     }
-  }
+    &__svg{
+      width: 19px;
+      height: 19px;
+    }
+}
+}
 
-.mobile-menu-li{
+.mobile-menu{
+  &-li{
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -26,11 +39,48 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.8px;
+    &:hover{
+      color: getcolor("hover");
+      transition: color 400ms;
+    }
+}
 }
 
-.mobile-menu-li:hover{
-  color: getcolor("hover");
-  transition: color 400ms;
+.contacts-list{
+  &__link{
+    color: #2196F3;
+    font-family: 'Roboto';
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+  }
+  &__mail{
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+  }
+}
+
+.social-list{
+  &__media{
+    color: #2196F3;
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.36px;
+  }
+}
+
+
+
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
 }
 
 .button-mob-menu{
@@ -51,67 +101,16 @@
     height: 24px;
 }
 
-  .form-mob-menu{
-    width: 100%;
-    max-height: 100%;
-    z-index: 100;
-  }
-  
-  .div-mob-menu {
-    margin: 0;
-    position:fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 48px 83px 48px 40px;
-    background-color: #FFF;
-    z-index: 99;
-  }
-  
-.mobile-menu__telcontacts{
-  color: #2196F3;
-  font-family: 'Roboto';
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: 0.68px;
-}
+  // .form-mob-menu{
+  //   width: 100%;
+  //   max-height: 100%;
+  //   z-index: 100;
+  // }
 
-.mobile-menu__mailcontacts{
-  color: #757575;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0.48px;
-}
-.mobile-menu-contacts:hover {
-  fill: getcolor("hover");
-  transition: fill 250ms;
-}
-
-.mobile-menu__media{
-  color: #2196F3;
-  font-family:'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  letter-spacing: 0.36px;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  /* visibility: hidden; */
-}
-
-// @keyframes mobile-menu {
-//   from {
-//     /* pushes the sun down past the viewport */
-//     transform: translateY(110vh);
-//   }
-//   to {
-//     /* returns the sun to its default position */
-//     transform: translateY(0);
-//   }
+// .mobile-menu-contacts:hover {
+//   fill: getcolor("hover");
+//   transition: fill 250ms;
 // }
+
+
+

@@ -26,7 +26,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+button {
   padding: 0;
   margin: 0;
 }
@@ -756,26 +757,39 @@ button {
   display: block;
 }
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu {
   margin: 0;
-  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: #FFF;
+  z-index: 99;
+  overflow: auto;
+}
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: none;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
-  outline: none;
 }
-
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .menu-toggle {
-    display: none;
+    display: block;
   }
 }
+.menu-toggle__svg {
+  width: 19px;
+  height: 19px;
+}
+
 .mobile-menu-li {
   color: #212121;
   font-family: "Roboto", sans-serif;
@@ -785,10 +799,39 @@ button {
   line-height: normal;
   letter-spacing: 0.8px;
 }
-
 .mobile-menu-li:hover {
   color: #2196F3;
   transition: color 400ms;
+}
+
+.contacts-list__link {
+  color: #2196F3;
+  font-family: "Roboto";
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+.contacts-list__mail {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.social-list__media {
+  color: #2196F3;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.36px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
 }
 
 .button-mob-menu {
@@ -807,59 +850,4 @@ button {
 .mob-menu__close {
   width: 24px;
   height: 24px;
-}
-
-.form-mob-menu {
-  width: 100%;
-  max-height: 100%;
-  z-index: 100;
-}
-
-.div-mob-menu {
-  margin: 0;
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 48px 83px 48px 40px;
-  background-color: #FFF;
-  z-index: 99;
-}
-
-.mobile-menu__telcontacts {
-  color: #2196F3;
-  font-family: "Roboto";
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: 0.68px;
-}
-
-.mobile-menu__mailcontacts {
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0.48px;
-}
-
-.mobile-menu-contacts:hover {
-  fill: #2196F3;
-  transition: fill 250ms;
-}
-
-.mobile-menu__media {
-  color: #2196F3;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  letter-spacing: 0.36px;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  /* visibility: hidden; */
 }/*# sourceMappingURL=portfolio.css.map */

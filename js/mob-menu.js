@@ -1,21 +1,19 @@
 (() => {
-    const refs = {
-    openModalBtn: document.querySelector("[data-mob-menu-open]"),
-    closeModalBtn: document.querySelector("[data-mob-menu-close]"),
-    modal: document.querySelector(".form-mob-menu"),
-    backdrop: document.querySelector(".div-mob-menu"),
+    const refsMenu = {
+      openMenuBtn: document.querySelector("[data-open-Menu]"),
+      closeMenuBtn: document.querySelector("[data-close-Menu]"),
+      menu: document.querySelector(".menu"),
     };
-    
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-    refs.backdrop.addEventListener("click", function(event) {
-    if (event.target === refs.backdrop) {
-    toggleModal();
-    }
+  
+    refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
+    refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
+    refsMenu.menu.addEventListener("click", function(event) {
+      if (event.target === refsMenu.menu) {
+        toggleMenu();
+      }
     });
-    
-    function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-    refs.backdrop.classList.toggle("is-hidden");
+  
+    function toggleMenu() {
+      refsMenu.menu.classList.toggle("is-hidden");
     }
-    })();
+  })();
