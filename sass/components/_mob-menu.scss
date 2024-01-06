@@ -76,8 +76,10 @@
 .social-list {
   align-items: center;
   display: flex;
-  flex-direction: row;
   gap: 10px;
+  @media screen and (max-width:479px){
+    gap: 2px;
+  }
   &__media {
     color: #2196f3;
     font-family: "Roboto", sans-serif;

@@ -834,8 +834,12 @@ button {
 .social-list {
   align-items: center;
   display: flex;
-  flex-direction: row;
   gap: 10px;
+}
+@media screen and (max-width: 479px) {
+  .social-list {
+    gap: 2px;
+  }
 }
 .social-list__media {
   color: #2196f3;
