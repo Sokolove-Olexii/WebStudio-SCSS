@@ -832,8 +832,8 @@ button {
 }
 
 .social-list {
-  align-items: center;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 @media screen and (max-width: 479px) {
